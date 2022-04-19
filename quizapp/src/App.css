@@ -1,0 +1,105 @@
+
+.App-div1 {
+  background-color: white;
+  height: 50px;
+  
+}
+.App-div2 {
+ background-color: pink;
+}
+
+.App-div3 {
+   margin: auto;
+   width: 50%;
+   font-size: 18px;
+}
+
+.App-header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  height: 50px;
+}
+.App-qlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
+.button{
+  background-color: rgb(40, 185, 40);
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: left;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width :90%;
+  
+}
+.button:hover{
+  box-shadow: 0 12px 16px 0 black;
+}
+.error{
+  background-color:red;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+ 
+}
+.Count_btn{
+  background-color: white;
+  border: 2px black solid;
+  width: 60px;
+  text-align: center;
+  font-size: 100%;
+}
+table,td,tr,th{
+  border: 1px solid black;
+}
+table{
+  margin-top: 2%;
+  margin-bottom: 2%;
+  background-color: white;
+}
+td{
+  width: 20%;
+  height:20%;
+}
+th{
+  background-color: red;
+}
+.result{
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: 150%;
+}
+.cmmt{
+  font-size: 100%;
+ background-color: violet;
+ text-align: center;
+}
+.head{
+  background-color: rgb(234, 75, 102);
+  color: white;
+  text-align: center;
+  height:30px;
+}
+.btn{
+  background-color: rgb(115, 212, 253);
+ border: 2px black solid;
+  color: black;
+  padding: 5px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+  width :32.9%;
+}
+.btn:hover{
+  background-color: red;
+}

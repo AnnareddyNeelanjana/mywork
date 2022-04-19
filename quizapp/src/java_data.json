@@ -1,0 +1,86 @@
+{
+  "quiz_questions": [
+    {
+      "id": 1,
+      "instruction_text": "1.Is JavaScript a case-sensitive language?",
+      "answer_options": [
+        "true",
+        "false",
+        "None of these",
+        "Answer mot here"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "true"
+    },
+    {
+      "id": 2,
+      "instruction_text": "2.Which of the following is true about cookie handling in JavaScript?",
+      "answer_options": [
+        "JavaScript can manipulate cookies using the cookie property of the Document object",
+        "JavaScript can read, create, modify, and delete the cookie or cookies that apply to the current web page",
+        " Both of the above",
+        "None of the above"
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": " Both of the above"
+    },
+    {
+      "id": 3,
+      "instruction_text": "3.Which built-in method returns the index within the calling String object of the first occurrence of the specified value?",
+      "answer_options": [
+        "getIndex()",
+        "location()",
+        "indexOf()",
+        "None of the above"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "indexOf()"
+    },
+    {
+      "id": 4,
+      "instruction_text": "4.Which of the following function of Number object formats a number with a specific number of digits to the right of the decimal?",
+      "answer_options": [
+        "toExponential()",
+        "toFixed()",
+        "toPrecision()",
+        " toLocaleString()"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "toFixed()"
+    },
+    {
+      "id": 5,
+      "instruction_text": "5.Which of the following function of Number object returns the number's value?",
+      "answer_options": [
+        "toString()",
+        "valueOf()",
+        "toLocaleString()",
+        "toPrecision()"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "valueOf()"
+    }
+  ]
+}

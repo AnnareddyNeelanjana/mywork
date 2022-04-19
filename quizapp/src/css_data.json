@@ -1,0 +1,89 @@
+{
+  "quiz_questions": [
+    {
+      "id": 1,
+      "instruction_text": "1. Which of the following property is used to set the background image of an element?",
+      "answer_options": [
+        "background-color",
+        "background-image",
+        "background-repeat",
+        " background-position"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "background-image"
+    },
+    {
+      "id": 2,
+      "instruction_text": "2.Choose the correct HTML element for the largest heading:",
+      "answer_options": [
+        "<h1>",
+        "<h6>",
+        "<heading>",
+        "<head>"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "<h1>"
+    },
+    {
+      "id": 3,
+      "instruction_text": "3.How to create an ordered list in HTML?",
+      "answer_options": [
+        "<ul>",
+        "<ol>",
+        "<li>",
+        "<l>"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "<ol>"
+    },
+    {
+      "id": 4,
+      "instruction_text": "4.<input> is -",
+      "answer_options": [
+        " a format tag",
+        "an empty tag",
+        "All of the above",
+        " None of the above"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "an empty tag"
+    },
+    {
+      "id": 5,
+      "instruction_text": "5.Which of the following is the container for <tr>, <th>, and <td> ?",
+      "answer_options": [
+        "<data>",
+        "<table>",
+        "<group>",
+        " All of the above"
+      ],
+      "status": [
+        ""
+      ],
+      "marked": [
+        ""
+      ],
+      "answer": "<table>"
+    }
+  ]
+}
