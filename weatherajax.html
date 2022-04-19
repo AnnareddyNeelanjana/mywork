@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script>
+      function fun(x){
+        var request = new XMLHttpRequest();        
+        request.open("GET","https://api.openweathermap.org/data/2.5/weather?q="+x+"&appid=93f26e3c57081a6210de53b8dcfdfea4",true);
+        request.onload =  function(){
+            if( request.status>=200 && request.status<400){
+               var data = JSON.parse(request.responseText);
+               console.log(data);
+
+               document.getElementById('name').innerHTML = data.name;
+               document.getElementById('temp').innerHTML = data.main.temp+"\u00B0";
+               document.getElementById('humid').innerHTML = data.main.humidity;
+               document.getElementById('weather').innerHTML = data.weather[0].description;
+                var icon = data.weather[0].icon+".png";
+                document.getElementById('myimg').src = "https://openweathermap.org/img/w/"+icon ;
+                document.getElementById('long').innerHTML = data.coord.lon;
+                document.getElementById('lat').innerHTML = data.coord.lat;
+            }
+            else {
+                console.log("some error");
+            }
+        };
+        request.onerror = function(){
+            console.log("connection error");
+        };
+       request.send();
+      };
+  </script>
+</head>
+<body style="background-color: lightblue;">
+<div class="container-fluid">
+    <div style="margin: auto;width: 50%; padding:1px;" >   
+    <header style="color:black;"><h1>WEATHER SERVICE(WS)</h1></header>
+    <div class="dropdown">
+        &nbsp&nbsp<button class="btn btn-primary dropdown-toggle "   type="button" data-toggle="dropdown">Select City
+         <span class="caret"></span>
+     </button>
+<ul class="dropdown-menu pre-scrollable" >
+<li><a href="#" onclick="fun('Kolkata')">Kolkata</a></li>
+<li><a href="#" onclick="fun('Mumbai')">Mumbai</a></li>
+<li><a href="#" onclick="fun('New Delhi')">New Delhi</a></li>
+<li><a href="#" onclick="fun('Chennai')">Chennai</a></li>
+<li><a href="#" onclick="fun('Hyderabad')">Hyderabad</a></li>
+<li><a href="#" onclick="fun('Bangalore')">Bangalore</a></li>
+<li><a href="#" onclick="fun('Ahmedabad')">Ahmedabad</a></li>
+<li><a href="#" onclick="fun('Pune')">Pune</a></li>
+</ul>
+<br><br>
+<table class="table">
+    <tr>
+        <td>NAME OF CITY</td>
+        <td id="name">Name here</td>
+    </tr>
+    <tr>
+        <td>TEMPERATURE</td>
+        <td id="temp">Temp here</td>
+    </tr>
+    <tr>
+        <td>HUMIDITY</td>
+        <td id="humid">Humidity here</td>
+    </tr>
+    <tr>
+        <td>WEATHER</td>
+        <td id="weather">Weather here</td>
+    </tr>
+    <tr>
+        <td>WEATHER IMAGE</td>
+        <td><img id="myimg" src="weather.png" width="90" height="90" alt="weatherimagehere"/></td>  
+    </tr>
+    <tr>
+        <td>LONGITUDE</td>
+        <td id="long">Logitude here</td>
+    </tr>
+    <tr>
+        <td>LATITUDE</td>
+        <td id="lat">Latitude here</td>
+    </tr>
+</table>
+</div>
+</div>
+</div>
+
+</body>
+</html>
+
