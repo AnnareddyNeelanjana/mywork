@@ -1,0 +1,29 @@
+.logo{
+    height: 300px;
+    width: 350px;
+}
+
+.subtitle{
+    font-style: bold;
+    font-size:500%;
+    color: red;
+    width: 100%;
+}
+
+.featuredHouse{
+    border-radius: 2px;
+    background-color: rgb(255,190,166);
+
+}
+.anotherTitle{
+    font-size: 200%;
+    color: white
+
+}
+
+#h{
+    background-color: black;
+}
+.btn{
+    width: 70%;
+}
