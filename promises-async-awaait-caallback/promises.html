@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let stocks = {
+           fruits : ["strawberry", "grapes", "banana", "apple"],
+           liquid : ["water", "ice"],
+           holder : ["cone", "cup", "stick"],
+           toppings : ["chocolate", "peanuts"],
+        };
+        let shop_open=false;
+      
+        let order=(time,work)=>{
+           
+            return new Promise((resolve,reject)=>{
+                if(shop_open){
+                   setTimeout(()=>{
+                       resolve(work)
+                   },time)
+                }
+                else{
+                    reject(console.log("rejected"));
+                }
+            })
+        }
+        order(0000,()=>{console.log("order is placed")})
+        .then(()=>{
+            return order(2000,console.log("production is started"))
+        })
+        .then(()=>{
+            return order(2000,console.log("fruits are chopped"))
+        })
+        .then(()=>{
+            return order(1000,console.log("water and ice are added"))
+        })
+        .then(()=>{
+            return order(1000,console.log("start the machine"))
+        })
+        .then(()=>{
+            return order(2000,console.log("selected container"))
+        })
+        .then(()=>{
+            return order(3000,console.log(`${stocks.toppings[0]} is added`))
+        })
+        .then(()=>{
+            return order(2000,console.log("ice cream is served"))
+        })
+        .catch(()=>{
+            console.log("shop is closed")
+        })
+        .finally(()=>{
+            console.log("day end shop closed")
+        })
+         
+
+           </script>
+</head>
+<body>
+    
+</body>
+</html>

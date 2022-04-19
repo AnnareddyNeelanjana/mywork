@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+ let stocks = {
+    fruits : ["strawberry", "grapes", "banana", "apple"],
+    liquid : ["water", "ice"],
+    holder : ["cone", "cup", "stick"],
+    toppings : ["chocolate", "peanuts"],
+ };
+ let order=(call_production)=>{
+     console.log("order is placed");
+     setTimeout(()=>{
+         console.log(`${stocks.fruits[0]} is selected`);
+     },1000)
+     call_production();
+ }
+   let production=()=>{
+    setTimeout(()=>{
+         console.log("production has started");
+         setTimeout(()=>{
+             console.log("fruits are chopped");
+             setTimeout(()=>{
+                 console.log("water and ice are added");
+                 setTimeout(()=>{
+                   console.log("start the machine");
+                   setTimeout(()=>{
+                     console.log("selected container");
+                     setTimeout(()=>{
+                        console.log(`${stocks.toppings[0]} is added`);
+                        setTimeout(()=>{
+                            console.log("ice cream is served");
+                        },2000)
+                     },3000)
+                   },2000)
+                 },1000)
+             },1000)
+         },2000)
+     },2000)
+   }
+  order(production);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
